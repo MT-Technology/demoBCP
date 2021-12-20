@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExchangeViewController" customModule="DemoBcp" customModuleProvider="target">
+            <connections>
+                <outlet property="lblExchangeRate" destination="q1R-Xw-Uqn" id="Lxg-6Y-Fiy"/>
+                <outlet property="lblFromCurrency" destination="pLg-68-XLj" id="nEI-H1-hBs"/>
+                <outlet property="lblToCurrency" destination="ITb-NK-Jzb" id="3EL-vv-EYx"/>
+                <outlet property="txtFrom" destination="Zo2-tK-nFr" id="JZ0-NS-qlu"/>
+                <outlet property="txtTo" destination="ZCk-CE-bMd" id="Q84-a7-ecY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="FTi-Tx-Q2u">
+                    <rect key="frame" x="157" y="84" width="100" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="YBh-VJ-ySk"/>
+                        <constraint firstAttribute="width" constant="100" id="v4q-ed-l9u"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingrese el monto" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zo2-tK-nFr" customClass="BCPMoneyTextField" customModule="DemoBcp" customModuleProvider="target">
+                    <rect key="frame" x="40" y="269" width="239" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="IJ9-bp-fJ6"/>
+                    </constraints>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                            <real key="value" value="14"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Tú envías:"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleTopPadding">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="leftMargin">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="topMargin">
+                            <real key="value" value="14"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="currencySymbol" value="$"/>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingrese el monto" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZCk-CE-bMd" customClass="BCPMoneyTextField" customModule="DemoBcp" customModuleProvider="target">
+                    <rect key="frame" x="40" y="319" width="239" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="jIN-GF-p0r"/>
+                    </constraints>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                            <real key="value" value="14"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Tú recibes:"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleTopPadding">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="leftMargin">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="topMargin">
+                            <real key="value" value="14"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="currencySymbol" value="$"/>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c23-Mq-k6a">
+                    <rect key="frame" x="274" y="269" width="100" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLg-68-XLj">
+                            <rect key="frame" x="8" y="18" width="52" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="pLg-68-XLj" firstAttribute="centerY" secondItem="c23-Mq-k6a" secondAttribute="centerY" id="VFY-5H-hqw"/>
+                        <constraint firstAttribute="width" constant="100" id="cRF-cb-yaJ"/>
+                        <constraint firstItem="pLg-68-XLj" firstAttribute="leading" secondItem="c23-Mq-k6a" secondAttribute="leading" constant="8" id="kjb-HR-k5c"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="lMQ-fT-QOw" appends="YES" id="Mvw-oD-nfc"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxz-of-RmV">
+                    <rect key="frame" x="274" y="319" width="100" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITb-NK-Jzb">
+                            <rect key="frame" x="8" y="18" width="52" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="WkA-ow-5fM"/>
+                        <constraint firstItem="ITb-NK-Jzb" firstAttribute="leading" secondItem="dxz-of-RmV" secondAttribute="leading" constant="8" id="aUD-cF-aLj"/>
+                        <constraint firstItem="ITb-NK-Jzb" firstAttribute="centerY" secondItem="dxz-of-RmV" secondAttribute="centerY" id="uWc-03-g0z"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="VJs-xV-1pB" appends="YES" id="27R-Gk-eEJ"/>
+                    </connections>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compra: 3.25 | Venta: 3.29" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="q1R-Xw-Uqn">
+                    <rect key="frame" x="10" y="389" width="394" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="hEZ-SB-mvo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XzU-Qc-p3E" customClass="BCPButton" customModule="DemoBcp" customModuleProvider="target">
+                    <rect key="frame" x="337" y="304" width="30" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="6hG-yO-BxW"/>
+                        <constraint firstAttribute="width" constant="30" id="FPd-gr-Muo"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="swap"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="swapCurrency:" destination="-1" eventType="touchUpInside" id="trM-MQ-Asp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="c23-Mq-k6a" firstAttribute="leading" secondItem="Zo2-tK-nFr" secondAttribute="trailing" constant="-5" id="07V-pU-GzW"/>
+                <constraint firstItem="Zo2-tK-nFr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="0Yb-7t-A4u"/>
+                <constraint firstItem="q1R-Xw-Uqn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="242-3U-cR8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="c23-Mq-k6a" secondAttribute="trailing" constant="40" id="4PG-66-vwg"/>
+                <constraint firstItem="Zo2-tK-nFr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="225" id="73s-bf-S51"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dxz-of-RmV" secondAttribute="trailing" constant="40" id="Geo-72-J9H"/>
+                <constraint firstItem="dxz-of-RmV" firstAttribute="top" secondItem="c23-Mq-k6a" secondAttribute="bottom" id="K4X-67-PoL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XzU-Qc-p3E" secondAttribute="trailing" constant="47" id="KWh-ka-NFH"/>
+                <constraint firstItem="q1R-Xw-Uqn" firstAttribute="top" secondItem="ZCk-CE-bMd" secondAttribute="bottom" constant="20" id="OBc-NP-8xd"/>
+                <constraint firstItem="c23-Mq-k6a" firstAttribute="height" secondItem="Zo2-tK-nFr" secondAttribute="height" id="TJU-jG-DTC"/>
+                <constraint firstItem="c23-Mq-k6a" firstAttribute="top" secondItem="Zo2-tK-nFr" secondAttribute="top" id="YVK-US-oEa"/>
+                <constraint firstItem="dxz-of-RmV" firstAttribute="height" secondItem="ZCk-CE-bMd" secondAttribute="height" id="cTK-iD-XLG"/>
+                <constraint firstItem="ZCk-CE-bMd" firstAttribute="top" secondItem="Zo2-tK-nFr" secondAttribute="bottom" id="cmV-dF-Juu"/>
+                <constraint firstItem="XzU-Qc-p3E" firstAttribute="top" secondItem="dxz-of-RmV" secondAttribute="top" constant="-15" id="g1l-MI-DeV"/>
+                <constraint firstItem="dxz-of-RmV" firstAttribute="leading" secondItem="ZCk-CE-bMd" secondAttribute="trailing" constant="-5" id="gpr-v9-kC4"/>
+                <constraint firstItem="ZCk-CE-bMd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="hYx-P5-IgW"/>
+                <constraint firstItem="FTi-Tx-Q2u" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="iPq-nK-MIx"/>
+                <constraint firstItem="FTi-Tx-Q2u" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="odn-Fr-nhx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="q1R-Xw-Uqn" secondAttribute="trailing" constant="10" id="pMX-ct-YLM"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="rGu-wT-KNg" appends="YES" id="q0C-mq-mMz"/>
+            </connections>
+            <point key="canvasLocation" x="-562.31884057971024" y="-9.375"/>
+        </view>
+        <tapGestureRecognizer id="rGu-wT-KNg">
+            <connections>
+                <action selector="tapGesture:" destination="-1" id="TNV-uA-3YK"/>
+            </connections>
+        </tapGestureRecognizer>
+        <pongPressGestureRecognizer delaysTouchesBegan="YES" allowableMovement="10" minimumPressDuration="1.5" id="lMQ-fT-QOw">
+            <connections>
+                <action selector="tapChangeCurrency:" destination="-1" id="j7S-NK-Hpr"/>
+            </connections>
+        </pongPressGestureRecognizer>
+        <pongPressGestureRecognizer delaysTouchesBegan="YES" allowableMovement="10" minimumPressDuration="1.5" id="VJs-xV-1pB">
+            <connections>
+                <action selector="tapChangeCurrency:" destination="-1" id="qrW-d0-4Ix"/>
+            </connections>
+        </pongPressGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="logo" width="100" height="55.5"/>
+        <image name="swap" width="30" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

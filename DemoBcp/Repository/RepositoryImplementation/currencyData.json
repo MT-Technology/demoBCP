@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "country": "Perú",
+        "name" : "Soles",
+        "symbol": "S/.",
+        "iso": "PEN",
+        "flagImageName": "Peru",
+        "buy": 1.0,
+        "sell": 1.0
+    },
+    {
+        "id": 2,
+        "country": "Estados Unidos",
+        "name" : "Dolar",
+        "symbol": "$",
+        "iso": "USD",
+        "flagImageName": "UnitedState",
+        "buy": 4.022,
+        "sell": 4.091
+    },
+    {
+        "id": 3,
+        "country": "Unión Europea",
+        "name" : "Euro",
+        "symbol": "€",
+        "iso": "EUR",
+        "flagImageName": "European",
+        "buy": 4.572,
+        "sell": 4.623
+    },
+    {
+        "id": 4,
+        "country": "Japón",
+        "name" : "Yen",
+        "symbol": "¥",
+        "iso": "JPY",
+        "flagImageName": "Japan",
+        "buy": 0.036,
+        "sell": 0.039
+    },
+    {
+        "id": 5,
+        "country": "Reino Unido",
+        "name" : "Libra Esterlina",
+        "symbol": "£",
+        "iso": "GBP",
+        "flagImageName": "UnitedKingdom",
+        "buy": 5.392,
+        "sell": 5.435
+    },
+    {
+        "id": 6,
+        "country": "Suiza",
+        "name" : "Franco suizo",
+        "symbol": "Fr.",
+        "iso": "CHF",
+        "flagImageName": "Switzerland",
+        "buy": 4.402,
+        "sell": 4.463
+    },
+    {
+        "id": 7,
+        "country": "Canadá",
+        "name" : "Dolar canadiense",
+        "symbol": "C$",
+        "iso": "CAD",
+        "flagImageName": "Canada",
+        "buy": 3.165,
+        "sell": 3.189
+    }
+]
